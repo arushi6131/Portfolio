@@ -1,25 +1,116 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
     line-height: 1.6;
 }
+
 header {
-    background: #333;
+    background: #222;
     color: #fff;
     padding: 1rem 0;
-    text-align: center;
 }
-nav ul {
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
+
+header nav ul li {
+    margin-left: 1.5rem;
 }
-nav ul li a {
+
+header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
 }
-section {
-    padding: 2rem;
+
+header nav ul li a:hover {
+    color: #f0a500;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 3rem 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 5px;
+    flex: 1 1 calc(33.333% - 2rem);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.contact-info li {
+    margin: 0.5rem 0;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #f0a500;
 }
