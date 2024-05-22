@@ -5,16 +5,18 @@ body {
     color: #333;
     line-height: 1.6;
     scroll-behavior: smooth;
+    background: #f4f4f9;
 }
 
 header {
-    background: #222;
+    background: #333;
     color: #fff;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
@@ -66,6 +68,11 @@ header nav ul li a:hover {
 .section {
     padding: 5rem 0;
     background: linear-gradient(to right, #f9f9f9, #eaeaea);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .section:nth-of-type(even) {
@@ -79,10 +86,16 @@ header nav ul li a:hover {
     text-align: center;
 }
 
+.section p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
 .project-list {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    justify-content: center;
 }
 
 .project-item {
@@ -93,6 +106,9 @@ header nav ul li a:hover {
     flex: 1 1 calc(33.333% - 2rem);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-item:hover {
@@ -107,11 +123,12 @@ header nav ul li a:hover {
 }
 
 footer {
-    background: #222;
+    background: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     position: relative;
+    margin-top: -1px;
 }
 
 footer p {
@@ -127,6 +144,7 @@ footer p {
 
 .contact-info li {
     margin: 0.5rem 0;
+    font-size: 1.1rem;
 }
 
 .contact-info a {
@@ -139,6 +157,11 @@ footer p {
     color: #f0a500;
 }
 
+.contact-info i {
+    margin-right: 0.5rem;
+    color: #f0a500;
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -147,7 +170,7 @@ footer p {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: #222;
+        background: #333;
     }
     header nav ul li {
         margin: 0;
